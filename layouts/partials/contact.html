@@ -1,0 +1,45 @@
+<section class="wrapper {{ .style }}" id="{{ .id }}">
+    <div class="content">
+        <h3>{{ .title }}</h3>
+        <form method="post" action="https://getform.io/f/64a894fe-3198-4ecd-944d-2f9709a59c02">
+            <div class="fields">
+                <div class="field half">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" value="" />
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" value="" />
+                </div>
+                <div class="field">
+                    <label for="booking">Was möchtest du mit mir machen?</label>
+                    <select name="booking" id="booking">
+                        <option value="">- Bitte wähle -</option>
+                        <option value="dsd">Schnuppertauchen</option>
+                        <option value="owd">Open Water Diver</option>
+                        <option value="aowd">Advanced Open Water Diver</option>
+                        <option value="rescue">Rescue Diver</option>
+                        <option value="trocki">Trockentauchen</option>
+                        <option value="nacht">Nachttauchen</option>
+                        <option value="trocki">Navigation</option>
+                        <option value="tief">Tieftauchen</option>
+                        <option value="nitrox">Nitrox</option>
+                        <option value="ppb">Tarieren in Perfektion</option>
+                        <option value="bergsee">Bergsee-Tauchen</option>
+                        <option value="eop">Emergency Oxygen Provider</option>
+                        <option value="dld">Geführten Tauchgang</option>
+                        <option value="training">Trainingstauchgang</option>
+                        <option value="nachricht">Etwas anderes</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="message">Nachricht</label>
+                    <textarea name="message" id="message" rows="6"></textarea>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" id="submit" value="Abschicken" /></li>
+            </ul>
+        </form>
+    </div>
+</section>
