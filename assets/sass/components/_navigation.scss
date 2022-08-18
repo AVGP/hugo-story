@@ -5,9 +5,12 @@ nav {
     min-height: 3.25em;
     display: block;
     ul {
+        position: absolute;
+        height: 3.25em;
         display: inline-block;
         list-style-type: none;
         li {
+            margin-top: 1.5em;
             display: inline-block;
             :before {
                 content: '➤';
