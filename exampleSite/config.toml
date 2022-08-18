@@ -33,6 +33,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
 [menu]
 [[menu.main]]
+  identifier = "Hugo Story"
   name = "Home"
   url = "/"
 
