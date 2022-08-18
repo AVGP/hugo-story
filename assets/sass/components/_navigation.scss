@@ -6,7 +6,8 @@ nav {
     display: block;
     ul {
         position: absolute;
-        height: 3.25em;
+        background: white;
+        min-height: 3.25em;
         display: inline-block;
         list-style-type: none;
         li {
@@ -44,6 +45,8 @@ nav {
         }
         ul { display: none; }
         input:checked ~ ul {
+            width: 100vw;
+            z-index: 10;
             display: block;
             li {
                 display:block;
