@@ -1,0 +1,53 @@
+nav {
+    h1 {
+        display: inline-block;
+    }
+    min-height: 3.25em;
+    display: block;
+    ul {
+        display: inline-block;
+        list-style-type: none;
+        li {
+            display: inline-block;
+            :before {
+                content: '➤';
+            }
+            a.active {
+                text-decoration: none;
+                color: grey;
+            }
+    
+        }
+    }
+
+    input { display: none; }
+    input[type="checkbox"]+label {
+        float: right;
+        margin: 0.25em;
+        background-color: white;
+        display: none;
+        padding: 0.2em 0.5em !important;
+        border-radius: 1em;
+        border: 1px solid grey;
+    }
+
+    input[type="checkbox"]+label::before {
+        display: none !important;
+    }
+
+    @media (max-width:40em) {
+        input[type="checkbox"]+label {
+            display: inline-block;
+        }
+        ul { display: none; }
+        input:checked ~ ul {
+            display: block;
+            li {
+                display:block;
+                font-size: 1.5em;
+                padding-bottom: 0.5em;
+                border-bottom: 1px solid grey;
+            }            
+        }
+    }
+}
