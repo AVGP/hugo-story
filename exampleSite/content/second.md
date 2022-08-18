@@ -5,3 +5,6 @@ layout: special
 ---
 
 Hello, this is some random content.
+{{< rawhtml >}}
+<img src="https://via.placeholder.com/300">
+{{< /rawhtml >}}
