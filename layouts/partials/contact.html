@@ -37,9 +37,19 @@
                     <textarea name="message" id="message" rows="6"></textarea>
                 </div>
             </div>
+            <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
             <ul class="actions">
                 <li><input type="submit" id="submit" value="Abschicken" /></li>
             </ul>
         </form>
+        <script src="https://www.google.com/recaptcha/api.js?render={{ .RecaptchaKey }}"></script>
+        <script>
+            grecaptcha.ready(function() {
+                grecaptcha.execute('{{ .RecaptchaKey }}', {action: 'homepage'})
+                .then(function(token) {
+                    document.getElementById('captchaResponse').value = token;
+                });
+            });
+        </script>
     </div>
 </section>
