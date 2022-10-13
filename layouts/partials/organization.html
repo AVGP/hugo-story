@@ -4,7 +4,7 @@
   "@type": "Organization",
   "name": "{{ .Site.Params.Organization.name }}",
   "description": "{{ .Site.Params.Organization.description }}",
-  "logo": "{{ .Site.Params.logo }}",
+  "logo": "{{ .Site.Params.logo | absURL }}",
   "location": "{{ .Site.Params.Organization.location }}"
 }
 </script>
